@@ -1,0 +1,13 @@
+# Ignore node_modules
+api-backend/node_modules/
+api-backend/.idea
+
+# Compiler files
+contracts/cache/
+contracts/out/
+contracts/broadcast/*/31337/
+contracts/broadcast/**/dry-run/
+# Docs
+contracts/docs/
+
+

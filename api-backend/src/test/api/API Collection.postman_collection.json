@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "0ee5eab5-488b-4245-b74e-63792ebddf77",
+		"name": "API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39136667"
+	},
+	"item": [
+		{
+			"name": "Get Monero Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/address-mapping/monero-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"address-mapping",
+						"monero-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Address Mapping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"ethereumAddress\": \"0x2F3ee072484063344385f28a619655DBd76468e2\", \n    \"randomNumber\": \"101010101010\",\n    \"assetAddress\": \"0x2Asset34566fg8937e2a7d82Address8912i8239\",\n    \"assetPrice\": \"15.000000000001\",\n    \"amountToTransfer\": \"15.101010101011\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/address-mapping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"address-mapping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address Mapping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/address-mapping/0x2F3ee072484063344385f28a619655DBd76468e2/101010101010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"address-mapping",
+						"0x2F3ee072484063344385f28a619655DBd76468e2",
+						"101010101010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Address Mapping",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/address-mapping/0x2F3ee072484063344385f28a619655DBd76468e2/101010101010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"address-mapping",
+						"0x2F3ee072484063344385f28a619655DBd76468e2",
+						"101010101010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Address Mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amountToTransfer\": \"17.000100000005\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/address-mapping/0x2F3ee072484063344385f28a619655DBd76468e2/000000000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"address-mapping",
+						"0x2F3ee072484063344385f28a619655DBd76468e2",
+						"000000000001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
